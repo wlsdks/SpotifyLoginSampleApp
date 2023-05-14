@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC7BAC3D2A10D5BE0086322B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BAC3C2A10D5BE0086322B /* MainViewController.swift */; };
 		ECCE61B42A10B27A00CE4BE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCE61B32A10B27A00CE4BE6 /* AppDelegate.swift */; };
 		ECCE61B62A10B27A00CE4BE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCE61B52A10B27A00CE4BE6 /* SceneDelegate.swift */; };
 		ECCE61BB2A10B27A00CE4BE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCE61B92A10B27A00CE4BE6 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC7BAC3C2A10D5BE0086322B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		ECCE61B02A10B27A00CE4BE6 /* SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCE61B32A10B27A00CE4BE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCE61B52A10B27A00CE4BE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				ECCE61C12A10B27A00CE4BE6 /* Info.plist */,
 				ECCE61C72A10B2E300CE4BE6 /* LoginViewController.swift */,
 				ECD107E12A10C79600F82324 /* EnterEmailViewController.swift */,
+				EC7BAC3C2A10D5BE0086322B /* MainViewController.swift */,
 			);
 			path = SpotifyLoginSampleApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				ECCE61B42A10B27A00CE4BE6 /* AppDelegate.swift in Sources */,
 				ECD107E22A10C79600F82324 /* EnterEmailViewController.swift in Sources */,
 				ECCE61B62A10B27A00CE4BE6 /* SceneDelegate.swift in Sources */,
+				EC7BAC3D2A10D5BE0086322B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
