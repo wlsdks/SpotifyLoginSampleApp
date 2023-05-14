@@ -10,15 +10,28 @@ import UIKit
 class MainViewController: UIViewController {
     
     
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // 네비게이션바 숨기기 처리
+        navigationController?.navigationBar.isHidden = true
+    }
     
-
+    
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+        
+    }
+    
 
 }
