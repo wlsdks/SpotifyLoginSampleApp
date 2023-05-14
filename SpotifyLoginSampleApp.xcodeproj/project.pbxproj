@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF80B0E0039B377157E16D4A /* Pods_SpotifyLoginSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E95B062102ADA9E8EFEDF5 /* Pods_SpotifyLoginSampleApp.framework */; };
 		EC7BAC3D2A10D5BE0086322B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BAC3C2A10D5BE0086322B /* MainViewController.swift */; };
+		EC7BAC3F2A10D7DC0086322B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC7BAC3E2A10D7DC0086322B /* GoogleService-Info.plist */; };
 		ECCE61B42A10B27A00CE4BE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCE61B32A10B27A00CE4BE6 /* AppDelegate.swift */; };
 		ECCE61B62A10B27A00CE4BE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCE61B52A10B27A00CE4BE6 /* SceneDelegate.swift */; };
 		ECCE61BB2A10B27A00CE4BE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCE61B92A10B27A00CE4BE6 /* Main.storyboard */; };
@@ -18,7 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33E95B062102ADA9E8EFEDF5 /* Pods_SpotifyLoginSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyLoginSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39EA5C8554DF64D2F8D863AC /* Pods-SpotifyLoginSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyLoginSampleApp.release.xcconfig"; path = "Target Support Files/Pods-SpotifyLoginSampleApp/Pods-SpotifyLoginSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		45FFCF894D8AA51043B532D8 /* Pods-SpotifyLoginSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyLoginSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyLoginSampleApp/Pods-SpotifyLoginSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EC7BAC3C2A10D5BE0086322B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EC7BAC3E2A10D7DC0086322B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECCE61B02A10B27A00CE4BE6 /* SpotifyLoginSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyLoginSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCE61B32A10B27A00CE4BE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCE61B52A10B27A00CE4BE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF80B0E0039B377157E16D4A /* Pods_SpotifyLoginSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F5D326FA19944F2604BA15A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45FFCF894D8AA51043B532D8 /* Pods-SpotifyLoginSampleApp.debug.xcconfig */,
+				39EA5C8554DF64D2F8D863AC /* Pods-SpotifyLoginSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC8E4951B6F4CBDE2CF4D38D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33E95B062102ADA9E8EFEDF5 /* Pods_SpotifyLoginSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECCE61A72A10B27A00CE4BE6 = {
 			isa = PBXGroup;
 			children = (
 				ECCE61B22A10B27A00CE4BE6 /* SpotifyLoginSampleApp */,
 				ECCE61B12A10B27A00CE4BE6 /* Products */,
+				3F5D326FA19944F2604BA15A /* Pods */,
+				EC8E4951B6F4CBDE2CF4D38D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +93,7 @@
 				ECCE61BC2A10B27A00CE4BE6 /* Assets.xcassets */,
 				ECCE61BE2A10B27A00CE4BE6 /* LaunchScreen.storyboard */,
 				ECCE61C12A10B27A00CE4BE6 /* Info.plist */,
+				EC7BAC3E2A10D7DC0086322B /* GoogleService-Info.plist */,
 				ECCE61C72A10B2E300CE4BE6 /* LoginViewController.swift */,
 				ECD107E12A10C79600F82324 /* EnterEmailViewController.swift */,
 				EC7BAC3C2A10D5BE0086322B /* MainViewController.swift */,
@@ -80,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECCE61C42A10B27A00CE4BE6 /* Build configuration list for PBXNativeTarget "SpotifyLoginSampleApp" */;
 			buildPhases = (
+				918F057A9AAD83E96366C551 /* [CP] Check Pods Manifest.lock */,
 				ECCE61AC2A10B27A00CE4BE6 /* Sources */,
 				ECCE61AD2A10B27A00CE4BE6 /* Frameworks */,
 				ECCE61AE2A10B27A00CE4BE6 /* Resources */,
+				6B93D68EEFAD5560850A9F0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +162,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCE61C02A10B27A00CE4BE6 /* LaunchScreen.storyboard in Resources */,
+				EC7BAC3F2A10D7DC0086322B /* GoogleService-Info.plist in Resources */,
 				ECCE61BD2A10B27A00CE4BE6 /* Assets.xcassets in Resources */,
 				ECCE61BB2A10B27A00CE4BE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B93D68EEFAD5560850A9F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyLoginSampleApp/Pods-SpotifyLoginSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyLoginSampleApp/Pods-SpotifyLoginSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpotifyLoginSampleApp/Pods-SpotifyLoginSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		918F057A9AAD83E96366C551 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifyLoginSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECCE61AC2A10B27A00CE4BE6 /* Sources */ = {
@@ -290,6 +363,7 @@
 		};
 		ECCE61C52A10B27A00CE4BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45FFCF894D8AA51043B532D8 /* Pods-SpotifyLoginSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +391,7 @@
 		};
 		ECCE61C62A10B27A00CE4BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39EA5C8554DF64D2F8D863AC /* Pods-SpotifyLoginSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
