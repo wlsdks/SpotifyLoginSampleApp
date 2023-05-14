@@ -30,7 +30,8 @@ class MainViewController: UIViewController {
     
     
     @IBAction func logoutButtonTapped(_ sender: UIButton) {
-        
+        // 로그아웃 버튼 클릭시 rootViewController로 이동시킨다.
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
 
