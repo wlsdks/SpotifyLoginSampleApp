@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
     
@@ -26,6 +27,14 @@ class MainViewController: UIViewController {
         
         // 네비게이션바 숨기기 처리
         navigationController?.navigationBar.isHidden = true
+        
+        // 이메일 만들어주기
+        let email = Auth.auth().currentUser?.email ?? "고객"
+        
+        welcomeLabel.text = """
+                            환영합니다.
+                            \(email)님
+                            """
     }
     
     
